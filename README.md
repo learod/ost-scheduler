@@ -6,6 +6,8 @@ Ost-Scheduler is an extension to [Ost](http://github.com/soveran/ost) that adds 
 Description
 -----------
 
+Ost provides simple, lightweight background job functionality. 
+
 **Ost-Scheduler** makes it easy to enqueue object ids and process them with
 workers.
 
