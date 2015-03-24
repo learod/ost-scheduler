@@ -1,7 +1,8 @@
-module Ost
+require "ost"
+module OstScheduler
   TIME_PERIOD = ENV["TIME_PERIOD"] || "24"
   TIMEOUT_SCHEDULER = ENV["OST_TIMEOUT"] || "1"
-  class Queue
+  # /class Queue
 
     def push_at(time,value)
       score = time.to_i if time.class == Time
@@ -47,5 +48,12 @@ module Ost
       end
     end
 
-  end
+  # end
 end
+
+class Ost::Queue
+  remove_method :items
+  remove_method :size
+  include OstScheduler
+end
+

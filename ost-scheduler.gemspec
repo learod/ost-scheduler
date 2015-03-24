@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = "ost-scheduler"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.summary           = "Redis based queues and workers in the future."
   s.description       = "Ost-scheduler lets you manage queues and workers with Redis."
   s.authors           = ["Leandro Rodriguez"]
